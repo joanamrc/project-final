@@ -1,0 +1,91 @@
+.navbar {
+    margin-bottom: 0px !important;
+    border-radius: 0px !important;
+}
+.ThumbSection {
+	margin: 50px 0;
+}
+.thumbnail .caption {
+	text-align: center;
+    min-height: 320px;
+}
+.Footer {
+	padding: 50px 0;
+    background-color: #000000;
+    margin-top: 50px;
+}
+.sticky-sidebar {
+	position: fixed;	
+}
+.ShowProducts .container, .SingleProduct .container {
+	margin-top: 50px;
+}
+.RegisterForm, .Checkout, .confirmedOrder {
+	margin-top: 50px;
+}
+.RegisterForm form {
+	margin: 0 auto;
+	max-width: 400px;
+}
+.input-group span.input-group-btn {
+	display: none;
+}
+.input-group .form-control:first-child {
+    border-top-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+    max-width: 61px;
+}
+.resumenProductos {
+	background-color: #f8f8f8;
+	padding: 10px;
+	margin-bottom: 25px;
+}
+.row.is-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.row.is-flex > [class*='col-'] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.confirmBtn {
+	height: 100%;
+}
+.confirmBtn button {
+	float: right;
+	position: relative;
+    bottom: -80%;
+}
+.confirmedOrderMessage {
+	background-color: #f8f8f8;
+    max-width: 400px;
+    padding: 15px 25px 55px;
+    margin-bottom: 15px;
+    margin: 0 auto;
+}
+.confirmedOrderMessage button {
+	float: right;
+}
+.description-paragraph {
+    min-height:202px;
+    text-align: justify;
+}
+@media (min-width: 768px){
+	.navbar-collapse .navbar-nav {
+	    float: right ;
+	}
+
+}

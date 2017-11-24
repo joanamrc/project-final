@@ -1,0 +1,29 @@
+{
+  "name": "proyecto-tienda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "no-op": "^1.0.3",
+    "prop-types": "^15.6.0",
+    "react": "^16.1.0",
+    "react-bootstrap": "^0.31.5",
+    "react-bootstrap-sidebar": "0.0.1",
+    "react-dom": "^16.1.0",
+    "react-router-bootstrap": "^0.24.4",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "^1.0.17",
+    "react-sticky": "^6.0.1",
+    "sticky": "^0.8.0"
+  }
+}
