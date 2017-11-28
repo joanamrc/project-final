@@ -8,7 +8,7 @@ mongoose.Promise = global.Promise
 require('dotenv').load()
 
 const routesProducts = require('./routes/products')
-const routesCheckout = require('./routes/checkout')
+//const routesCheckout = require('./routes/checkout')
 
 const {DB_URL} = process.env
 
@@ -23,9 +23,9 @@ app.use(bodyParser.json())
 
 
 app.use('/products', routesProducts)
-app.use('/chechout', routesCheckout)
+//app.use('/chechout', routesCheckout)
 
-app.post('/checkout', addProductToCart)
+//app.post('/checkout', addProductToCart)
 
 
 app.listen(3005)

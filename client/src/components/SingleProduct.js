@@ -7,9 +7,10 @@ class SingleProduct extends Component {
 	constructor(props) {
 		super()
 		this.state = {
-				product: []	
+				product: [],
+				value: ''
 		}
-
+		this.handleClick = this.handleClick.bind(this);
 	}
 
 	componentDidMount() {
@@ -21,6 +22,20 @@ class SingleProduct extends Component {
 			this.setState({product})
 		})
 	}
+
+	handleClick(){
+		console.log('añadiendo producto', this.state.product[0].title)
+		const newProduct = {
+			title: this.state.product[0].title
+		}
+		console.log(this.props)
+		//this.props.addToCart(newProduct)
+
+		this.setState({
+	      value: ''
+	    })
+	}
+
 
 	render(){
 
@@ -50,7 +65,7 @@ class SingleProduct extends Component {
  				   			<Quantity />	
  		     			</Col>
  		     			<Col xs={4} md={4}>
- 				   			<Button bsStyle="primary">Add to cart</Button>	
+ 				   			<Button bsStyle="primary" onClick={this.handleClick}>Add to cart</Button>	
  		     			</Col>
  		     		</Row>
 			          

@@ -9,12 +9,26 @@ import Footer from './footer'
 
 
 class App extends Component {
+	constructor(props){
+		super(props)
+		this.state = {
+			products: []
+		}
+		this.addToCart = this.addToCart.bind(this)
+	}
+
+	addToCart(newProduct) {
+	    this.setState({
+	    	
+	      	products: [...this.state.products, newProduct]
+	    });
+	  }
 
 	render() {
 	  return (
 	    <div className="App">
 	      <Header />
-	      <Main />
+	      <Main addToCart={this.addToCart}/>
 	      <Footer />
 	    </div>
 	  );
